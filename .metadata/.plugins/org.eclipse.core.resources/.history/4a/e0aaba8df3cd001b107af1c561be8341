@@ -1,0 +1,25 @@
+package steps;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+
+public class BuscaDeCredenciado {
+	@Dado("que o usuario esteja na pagina busca de credenciado")
+	public void que_o_usuario_esteja_na_pagina_busca_de_credenciado() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Quando("busca por {string} na barra de pesquisa E pressiona Enter")
+	public void busca_por_na_barra_de_pesquisa_E_pressiona_Enter(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Entao("deve aparecer os credenciados proximos")
+	public void deve_aparecer_os_credenciados_proximos() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+}

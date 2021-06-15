@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="avaliacao" tests="2" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="config.TestRunner">
+    <testcase name="initializationError" classname="config.TestRunner" incomplete="true"/>
+    <testcase name="initializationError" classname="config.TestRunner" time="0.001">
+      <error>java.lang.Exception: Method iniciar() should be static&#13;
+	at org.junit.runners.model.FrameworkMethod.validatePublicVoid(FrameworkMethod.java:84)&#13;
+	at org.junit.runners.model.FrameworkMethod.validatePublicVoidNoArg(FrameworkMethod.java:67)&#13;
+	at org.junit.runners.ParentRunner.validatePublicVoidNoArgMethods(ParentRunner.java:131)&#13;
+	at org.junit.runners.ParentRunner.collectInitializationErrors(ParentRunner.java:111)&#13;
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:344)&#13;
+	at org.junit.runners.ParentRunner.&lt;init&gt;(ParentRunner.java:74)&#13;
+	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:79)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:31)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:24)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)&#13;
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:29)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)&#13;
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:24)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:90)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:76)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:525)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:768)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+java.lang.Exception: Method finalizar() should be static&#13;
+	at org.junit.runners.model.FrameworkMethod.validatePublicVoid(FrameworkMethod.java:84)&#13;
+	at org.junit.runners.model.FrameworkMethod.validatePublicVoidNoArg(FrameworkMethod.java:67)&#13;
+	at org.junit.runners.ParentRunner.validatePublicVoidNoArgMethods(ParentRunner.java:131)&#13;
+	at org.junit.runners.ParentRunner.collectInitializationErrors(ParentRunner.java:112)&#13;
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:344)&#13;
+	at org.junit.runners.ParentRunner.&lt;init&gt;(ParentRunner.java:74)&#13;
+	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:79)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:31)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:24)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)&#13;
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:29)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)&#13;
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:24)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:90)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:76)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:525)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:768)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

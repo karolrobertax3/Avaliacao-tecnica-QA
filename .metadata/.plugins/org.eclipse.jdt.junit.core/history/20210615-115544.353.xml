@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="avaliacao" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="config.TestRunner" time="0.004">
+    <testcase name="initializationError" classname="config.TestRunner" time="0.004">
+      <error>cucumber.runtime.CucumberException: 
+
+Classes annotated with @RunWith(Cucumber.class) must not define any
+Step Definition or Hook methods. Their sole purpose is to serve as
+an entry point for JUnit. Step Definitions and Hooks should be defined
+in their own classes. This allows them to be reused across features.
+Offending class: class config.TestRunner
+&#13;
+	at cucumber.runtime.junit.Assertions.assertNoCucumberAnnotatedMethods(Assertions.java:16)&#13;
+	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:80)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:31)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:24)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)&#13;
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:29)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)&#13;
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:24)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:90)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:76)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:525)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:768)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

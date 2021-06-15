@@ -1,0 +1,32 @@
+package config;
+
+
+public class Runner {
+	tags = {"@done", "@Formulario", "@manutencao", "@OpenVPN", "@IDSS-1154"},
+	        features = { "src/test/java/com/sky/features/skycombr/"}, 
+	        plugin = { 
+	                 "pretty",
+	                 "json:target/cucumber-reports/cucumber.json", //Imprime a fonte Gherkin com cores adicionais e rastreia a pilha para erros
+	                 "rerun:target/cucumber-reports/rerun.txt",
+	                 "com.sky.cucumber.listener.ExtentCucumberFormatter:"
+	                 }, 
+	        snippets = SnippetType.CAMELCASE, // cria os nomes dos metodos sem _ com Letas maiscula por palavras
+	        glue = { "com.sky.steps_definitions.skycombr",
+	                "com.sky.config.hooks" },  
+	        monochrome = true, //Sem Caracters especiais nas logs do Console
+	        dryRun = false, //Quando true, ele valida se o mapeamento esta correto sem executar o navegador
+	        strict = true//Quando true, ele falha o teste se encontrar algum steps como undefined/pending
+	        
+	)
+	public class TestRunner {
+	    @BeforeClass
+	    public static void writeExtentReport() {
+	        ExtentProperties extentProperties = ExtentProperties.INSTANCE;
+	        extentProperties.setReportPath("src/test/resources/reports_executions/report.html");
+	    }
+	    @AfterClass
+	    public static void afterExtentReport() {
+	        Reporter.loadXMLConfig("src/test/resources/config-extent-reports/extent-config.xml"); 
+	    }
+	}
+}

@@ -1,52 +1,38 @@
 package steps;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Entao;
-import io.cucumber.java.pt.Quando;
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import pageActions.Blog;
+
 
 public class BuscaNoBlog {
 	String url;
 	WebDriver driver;
 	
-	Blog blog;
-
-	@Before
-	public void iniciar() {
-		url = " https://ww2.soc.com.br/blog/";
-
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
-		
-		blog = new Blog(driver);
-
-	}
-
-	@After
-	public void finalizar() {
-		driver.quit();
-	}
+	
+	Blog blog= new Blog();
 	
 	@Dado("que o usuario que esteja no site soc tenha clicado no botao de pesquisa")
 	public void que_o_usuario_que_esteja_no_site_soc_tenha_clicado_no_botao_de_pesquisa() {
-	    driver.get(url);
+		blog.abrirBrowser();
+		blog.entrarSite();
+		
 	}
 	
-	@Quando("busca por uma categoria {string} na barra de pesquisa E pressiona Enter")
-	public void busca_por_uma_categoria_na_barra_de_pesquisa_e_pressiona_enter(String categoria) {
-	   blog.buscarCategoria(categoria);
+	@Quando("busca por uma categoria saude na barra de pesquisa E pressiona Enter")
+	public void busca_por_uma_categoria_na_barra_de_pesquisa_e_pressiona_enter() {
+	   blog.buscarCategoria("saude");
 	}
 
 	@Entao("deve aparecer os resultados relacionados com a pesquisa")
 	public void deve_aparecer_os_resultados_relacionados_com_a_pesquisa() {
+		blog.validaPesquisa();
+		blog.fecharPagina();
+	  
 	  
 	}
 

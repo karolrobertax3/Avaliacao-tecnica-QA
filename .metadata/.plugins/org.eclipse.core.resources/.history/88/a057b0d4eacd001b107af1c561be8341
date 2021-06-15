@@ -1,0 +1,45 @@
+package config;
+import java.util.concurrent.TimeUnit;
+
+
+import org.junit.AfterClass;
+
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.CucumberOptions;
+
+import cucumber.api.junit.Cucumber;
+
+ 
+@RunWith(Cucumber.class)
+@CucumberOptions(
+ features = "src/test/java/feature",
+ glue={"step"}
+ )
+ 
+public class TestRunner {
+	WebDriver driver;
+	
+	@BeforeClass
+	public static void iniciar() {
+		WebDriver driver;
+
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
+		
+		
+
+	}
+
+	@AfterClass
+	public static void finalizar() {
+		WebDriver driver;
+		driver.quit();
+	}
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="avaliacao" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="config.TestRunner" time="15.385">
+    <testsuite name="Funcionalidade: Fitrar Credenciados" time="0.0">
+      <testcase name="Preencher os filtros de pesquisa" classname="Fitrar Credenciados" time="0.0">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "que o usuario tenha clicado no menu a opcao de credenciados" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "busca por uma "cidade" na barra de pesquisa E pressiona Enter" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "deve aparecer os credenciados proximos a ele" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+    <testsuite name="Funcionalidade: Busca no Blog" time="15.385">
+      <testcase name="Pesquisar uma categoria" classname="Busca no Blog" time="15.385"/>
+    </testsuite>
+  </testsuite>
+</testrun>

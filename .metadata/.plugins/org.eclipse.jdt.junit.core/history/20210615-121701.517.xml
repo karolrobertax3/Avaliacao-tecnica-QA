@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="avaliacao" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="config.TestRunner" time="2.591">
+    <testsuite name="Funcionalidade: Fitrar Credenciados" time="0.0">
+      <testcase name="Preencher os filtros de pesquisa" classname="Fitrar Credenciados" time="0.0">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "que o usuario tenha clicado no menu a opcao de credenciados" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "busca por uma "cidade" na barra de pesquisa E pressiona Enter" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "deve aparecer os credenciados proximos a ele" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+    <testsuite name="Funcionalidade: Busca no Blog" time="2.591">
+      <testcase name="Pesquisar uma categoria" classname="Busca no Blog" time="2.591">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at steps.BuscaNoBlog.que_o_usuario_que_esteja_no_site_soc_tenha_clicado_no_botao_de_pesquisa(BuscaNoBlog.java:23)&#13;
+	at ✽.que o usuario que esteja no site soc tenha clicado no botao de pesquisa(file:src/test/java/feature/BuscaNoBlog.feature:6)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

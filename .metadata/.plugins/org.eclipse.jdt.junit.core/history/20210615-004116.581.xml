@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SOC" project="avaliacao" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="config.SOC" time="22.409">
+    <testcase name="abrirPagina" classname="config.SOC" time="22.409">
+      <failure>
+        <expected>https://ww2.soc.com.br/blog/.</expected>
+        <actual>https://www.soc.com.br/blog/</actual>
+        org.junit.ComparisonFailure: expected:&lt;https://ww[2.soc.com.br/blog/.]&gt; but was:&lt;https://ww[w.soc.com.br/blog/]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:125)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:147)&#13;
+	at config.SOC.abrirPagina(SOC.java:36)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:768)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>
