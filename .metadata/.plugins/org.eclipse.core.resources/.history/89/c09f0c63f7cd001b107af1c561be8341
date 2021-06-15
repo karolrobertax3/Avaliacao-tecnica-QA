@@ -3,17 +3,23 @@ package steps;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import pageActions.Blog;
 import pageActions.Credenciado;
 
 public class BuscaDeCredenciado {
 	
+	Blog blog = new Blog();
 	Credenciado credenciado = new Credenciado();
 	
 	@Dado("que o usuario esteja na pagina busca de credenciado")
 	public void que_o_usuario_esteja_na_pagina_busca_de_credenciado() {
 		credenciado.abrirBrowser();
 		credenciado.entrarSiteSoc();
-		    
+		
+		
+		
+		
+	    
 	}
 
 	@Quando("busca por {string} na barra de pesquisa E pressiona Enter")
@@ -25,6 +31,6 @@ public class BuscaDeCredenciado {
 	@Entao("deve aparecer os credenciados proximos")
 	public void deve_aparecer_os_credenciados_proximos() {
 		credenciado.validaResultado();
-		credenciado.fecharPagina();
+		blog.fecharPagina();
 	}
 }

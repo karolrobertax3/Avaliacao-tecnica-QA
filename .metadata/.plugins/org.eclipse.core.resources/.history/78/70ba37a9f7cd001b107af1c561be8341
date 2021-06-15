@@ -1,8 +1,5 @@
 package pageActions;
 
-import static org.junit.Assert.assertTrue;
-
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -17,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Credenciado {
 	WebDriver driver;
 	By filtro = By.cssSelector("#ipt-busca-credenciado-2");
-	By resultados = By.cssSelector(".estrutura-resultados-mapa");
 	
 
 	public void buscaCredenciado(String busca) {
@@ -41,11 +37,8 @@ public class Credenciado {
 	    driver.get(url);
 	}
 	public void validaResultado() {
-
-		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(resultados));
-		List<WebElement>lista = driver.findElements(resultados);
-		assertTrue(lista.size() >= 1);
+		
+		
 	}
 	public void fecharPagina() {
 		driver.close();

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="avaliacao" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="config.TestRunner" time="17.768">
+    <testsuite name="Funcionalidade: Fitrar Credenciados" time="4.257">
+      <testcase name="Preencher os filtros de pesquisa" classname="Fitrar Credenciados" time="4.257">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at pageActions.Credenciado.entrarSiteSoc(Credenciado.java:17)&#13;
+	at steps.BuscaDeCredenciado.que_o_usuario_esteja_na_pagina_busca_de_credenciado(BuscaDeCredenciado.java:17)&#13;
+	at ✽.que o usuario esteja na pagina busca de credenciado(file:src/test/java/feature/BuscaDeCredenciado.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Funcionalidade: Busca no Blog" time="13.509">
+      <testcase name="Pesquisar uma categoria" classname="Busca no Blog" time="13.509"/>
+    </testsuite>
+  </testsuite>
+</testrun>

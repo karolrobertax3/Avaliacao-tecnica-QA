@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="avaliacao" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="config.TestRunner" time="45.963">
+    <testsuite name="Funcionalidade: Fitrar Credenciados" time="30.968">
+      <testcase name="Preencher os filtros de pesquisa" classname="Fitrar Credenciados" time="30.968"/>
+    </testsuite>
+    <testsuite name="Funcionalidade: Busca no Blog" time="14.995">
+      <testcase name="Pesquisar uma categoria" classname="Busca no Blog" time="14.995"/>
+    </testsuite>
+  </testsuite>
+</testrun>

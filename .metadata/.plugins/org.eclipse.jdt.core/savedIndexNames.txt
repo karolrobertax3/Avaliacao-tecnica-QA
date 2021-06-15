@@ -5,7 +5,6 @@ INDEX VERSION 1.131+C:\Users\Proevento\Desktop\avaliacao\.metadata\.plugins\org.
 285919467.index
 1044357983.index
 1724163234.index
-3484441916.index
 2737900825.index
 3226951007.index
 2817681780.index

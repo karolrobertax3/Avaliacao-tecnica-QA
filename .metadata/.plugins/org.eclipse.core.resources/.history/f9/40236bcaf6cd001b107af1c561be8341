@@ -1,0 +1,30 @@
+package pageActions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Credenciado {
+	WebDriver driver;
+	By funcionalidades = By.cssSelector("#sm-16237722258381506-3");
+	By socnet = By.xpath("//a[contains(.,'Rede SOCNET')]");
+
+	public void abrirBrowser() {
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
+		
+	}
+	public void entrarSiteSoc() {
+		String url = " https://socnet.soc.com.br/";
+	    driver.get(url);
+	}
+	
+}

@@ -1,12 +1,8 @@
 package pageActions;
 
-import static org.junit.Assert.assertTrue;
-
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,19 +12,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Credenciado {
 	WebDriver driver;
-	By filtro = By.cssSelector("#ipt-busca-credenciado-2");
-	By resultados = By.cssSelector(".estrutura-resultados-mapa");
-	
+	By funcionalidades = By.cssSelector("#sm-16237722258381506-3");
+	By socnet = By.xpath("//a[contains(.,'Rede SOCNET')]");
 
-	public void buscaCredenciado(String busca) {
-		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(filtro));
-		WebElement elemento = driver.findElement(filtro);
-		wait.until(ExpectedConditions.visibilityOf(elemento));
-		
-		elemento.clear();
-		elemento.sendKeys(busca + Keys.ENTER);
-	}
 	public void abrirBrowser() {
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
@@ -40,16 +26,14 @@ public class Credenciado {
 		String url = " https://socnet.soc.com.br/";
 	    driver.get(url);
 	}
-	public void validaResultado() {
-
+	public void acessaBuscaCredenciado() {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(resultados));
-		List<WebElement>lista = driver.findElements(resultados);
-		assertTrue(lista.size() >= 1);
-	}
-	public void fecharPagina() {
-		driver.close();
+		WebElement elemento = driver.findElement(funcionalidades);
+		wait.until(ExpectedConditions.visibilityOf(elemento));
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(elemento).moveToElement(elemento.findElement(socnet)).click().build().perform();
+		
 		
 	}
-	
 }

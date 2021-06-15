@@ -41,10 +41,10 @@ public class Credenciado {
 	    driver.get(url);
 	}
 	public void validaResultado() {
-
+		List<WebElement>lista = driver.findElements(resultados);
+		
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(resultados));
-		List<WebElement>lista = driver.findElements(resultados);
 		assertTrue(lista.size() >= 1);
 	}
 	public void fecharPagina() {
