@@ -1,0 +1,40 @@
+package steps;
+
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
+
+public class BuscaNoBlog {
+	@Dado("que o usuario que esteja no site soc tenha clicado no botao de pesquisa")
+	public void que_o_usuario_que_esteja_no_site_soc_tenha_clicado_no_botao_de_pesquisa() {
+	    
+	}
+
+	@Quando("busca por uma categoria {string} na barra de pesquisa")
+	public void busca_por_uma_categoria_na_barra_de_pesquisa(String string) {
+	    
+	}
+
+	@Quando("pressiona Enter")
+	public void pressiona_enter() {
+	  
+	}
+
+	@Entao("deve aparecer os resultados relacionados com a pesquisa")
+	public void deve_aparecer_os_resultados_relacionados_com_a_pesquisa() {
+	  
+	}
+
+	@Quando("escolho {string}")
+	public void escolho(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Entao("exibe {string}")
+	public void exibe(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

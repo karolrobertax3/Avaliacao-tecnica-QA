@@ -1,0 +1,19 @@
+package steps;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Blog {
+@FindBy(name = "s")
+private WebElement busca;
+
+@FindBy(css = "elementor-search-form")
+private WebElement lupa;
+
+public Blog() {
+	super();
+	
+}
+
+
+}

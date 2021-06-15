@@ -1,0 +1,26 @@
+package steps;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Blog extends  PageObject{
+@FindBy(name = "s")
+private WebElement busca;
+
+@FindBy(css = "elementor-search-form")
+private WebElement lupa;
+
+public Blog(WebDriver driver) {
+	super(driver);
+	
+}
+
+public void buscarCategoria(String categoria) {
+	busca.clear();
+	busca.sendKeys(categoria + Keys.ENTER);
+}
+
+
+}
